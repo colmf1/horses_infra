@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "test-bucket"
+  bucket = "horsies-cf-202512-test-bucket"
 
   tags = {
     Name        = "Test Bucket"
