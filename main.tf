@@ -10,13 +10,3 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_s3_bucket" "test_bucket" {
-  bucket = "horsies-cf-202512-test-bucket"
-
-  tags = {
-    Name        = "Test Bucket"
-    Environment = "Dev"
-  }
-
-  force_destroy = true
-}
